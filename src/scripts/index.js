@@ -54,7 +54,7 @@ buttons.forEach((button) => {
       photoArray[activeIndex].setAttribute("data-active", "false");
       photoArray[activeIndex + offset].setAttribute("data-active", "true");
       allImageRadioInputs.forEach(() => {
-        allImageRadioInputs[activeIndex + 1].checked = true;
+        allImageRadioInputs[activeIndex + offset].checked = true;
       });
     }
   });
